@@ -1,0 +1,59 @@
+:root {
+    --bg-theme: hsl(0, 0%, 90%);
+    --bg-toggle-keypad: hsl(0, 5%, 81%);
+    --bg-screen: hsl(0, 0%, 93%);
+    --bg-del-reset-key: hsl(185, 42%, 37%);
+    --key-shadow-del-reset: hsl(185, 58%, 25%);
+    --bg-keys: hsl(45, 7%, 89%);
+    --key-shadow-keys: hsl(35, 11%, 61%);
+    --bg-result-toggle-key: hsl(25, 98%, 40%);
+    --key-shadow-result: hsl(25, 99%, 27%);
+    --text-color: hsl(60, 10%, 19%); 
+}
+
+body {
+    background-color: var(--bg-theme);
+}
+
+label, h4 {
+    color: var(--text-color);
+}
+
+.title {
+    color: var(--text-color);
+}
+
+.change-mode {
+    background-color: var(--bg-toggle-keypad);
+}
+
+.display input {
+    background-color: var(--bg-screen);
+    color: var(--text-color);
+}
+
+.buttons {
+    background-color: var(--bg-toggle-keypad);
+}
+
+button {
+    background-color: var(--bg-keys);
+    box-shadow: 0 3px 0 var(--key-shadow-keys);
+}
+
+.similar {
+    color: var(--text-color);
+}
+
+#clearBtn,
+#resetBtn {
+    background-color: var(--bg-del-reset-key);
+    box-shadow: 0 3px 0 var(--key-shadow-del-reset);
+    color: var(--bg-keys);
+}
+
+#equalsBtn{
+    background-color: var(--bg-result-toggle-key);
+    box-shadow: 0 3px 0 var(--key-shadow-result);
+    color: white;
+}
